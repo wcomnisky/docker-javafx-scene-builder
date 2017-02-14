@@ -30,7 +30,5 @@ USER developer
 ENV HOME /home/developer
 
 WORKDIR $HOME
-
-RUN pwd && echo "" && ls -la && echo "" && whoami && echo ""
    
 CMD ["/usr/bin/java", "-jar", "./scenebuilder.jar"]
